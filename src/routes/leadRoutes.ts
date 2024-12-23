@@ -6,7 +6,8 @@ const leadRoutes: FastifyPluginAsync = async (fastify: FastifyInstance) => {
   // Create a new lead
   fastify.post(
     "/",
-    { preHandler: authenticate,
+    // { preHandler: authenticate,
+   {
       schema: {
         body: {
           type: "object",
